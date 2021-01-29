@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+</head>
+<body>
+&lt;krpano version=&quot;1.20.6&quot; title=&quot;Virtual Tour&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;include url=&quot;skin/vtourskin.xml&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;!&ndash;&ndash; customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... &ndash;&ndash;&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;skin_settings maps=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               maps_type=&quot;google&quot;<br>
+&nbsp;&nbsp;&nbsp;               maps_bing_api_key=&quot;&quot;<br>
+&nbsp;&nbsp;&nbsp;               maps_google_api_key=&quot;&quot;<br>
+&nbsp;&nbsp;&nbsp;               maps_zoombuttons=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               maps_loadonfirstuse=&quot;true&quot;<br>
+&nbsp;&nbsp;&nbsp;               gyro=&quot;true&quot;<br>
+&nbsp;&nbsp;&nbsp;               gyro_keeplookingdirection=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               webvr=&quot;true&quot;<br>
+&nbsp;&nbsp;&nbsp;               webvr_keeplookingdirection=&quot;true&quot;<br>
+&nbsp;&nbsp;&nbsp;               webvr_prev_next_hotspots=&quot;true&quot;<br>
+&nbsp;&nbsp;&nbsp;               autotour=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               littleplanetintro=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               followmousecontrol=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               title=&quot;true&quot;<br>
+&nbsp;&nbsp;&nbsp;               thumbs=&quot;true&quot;<br>
+&nbsp;&nbsp;&nbsp;               thumbs_width=&quot;120&quot; thumbs_height=&quot;80&quot; thumbs_padding=&quot;10&quot; thumbs_crop=&quot;0|40|240|160&quot;<br>
+&nbsp;&nbsp;&nbsp;               thumbs_opened=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               thumbs_text=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               thumbs_dragging=&quot;true&quot;<br>
+&nbsp;&nbsp;&nbsp;               thumbs_onhoverscrolling=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               thumbs_scrollbuttons=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               thumbs_scrollindicator=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               thumbs_loop=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               tooltips_buttons=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               tooltips_thumbs=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               tooltips_hotspots=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               tooltips_mapspots=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               deeplinking=&quot;false&quot;<br>
+&nbsp;&nbsp;&nbsp;               loadscene_flags=&quot;MERGE&quot;<br>
+&nbsp;&nbsp;&nbsp;               loadscene_blend=&quot;OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)&quot;<br>
+&nbsp;&nbsp;&nbsp;               loadscene_blend_prev=&quot;SLIDEBLEND(0.5, 180, 0.75, linear)&quot;<br>
+&nbsp;&nbsp;&nbsp;               loadscene_blend_next=&quot;SLIDEBLEND(0.5,   0, 0.75, linear)&quot;<br>
+&nbsp;&nbsp;&nbsp;               loadingtext=&quot;loading...&quot;<br>
+&nbsp;&nbsp;&nbsp;               layout_width=&quot;100%&quot;<br>
+&nbsp;&nbsp;&nbsp;               layout_maxwidth=&quot;814&quot;<br>
+&nbsp;&nbsp;&nbsp;               controlbar_width=&quot;&ndash;24&quot;<br>
+&nbsp;&nbsp;&nbsp;               controlbar_height=&quot;40&quot;<br>
+&nbsp;&nbsp;&nbsp;               controlbar_offset=&quot;20&quot;<br>
+&nbsp;&nbsp;&nbsp;               controlbar_offset_closed=&quot;&ndash;40&quot;<br>
+&nbsp;&nbsp;&nbsp;               controlbar_overlap.no&ndash;fractionalscaling=&quot;10&quot;<br>
+&nbsp;&nbsp;&nbsp;               controlbar_overlap.fractionalscaling=&quot;0&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_skin_images=&quot;vtourskin.png&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_bgcolor=&quot;0x2D3E50&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_bgalpha=&quot;0.8&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_bgborder=&quot;0&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_bgroundedge=&quot;1&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_bgshadow=&quot;0 4 10 0x000000 0.3&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_thumbborder_bgborder=&quot;3 0xFFFFFF 1.0&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_thumbborder_padding=&quot;2&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_thumbborder_bgroundedge=&quot;0&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_text_css=&quot;color:#FFFFFF; font&ndash;family:Arial;&quot;<br>
+&nbsp;&nbsp;&nbsp;               design_text_shadow=&quot;1&quot;<br>
+&nbsp;&nbsp;&nbsp;               /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;!&ndash;&ndash;<br>
+&nbsp;&nbsp;&nbsp;    For an alternative skin design either change the &lt;skin_settings&gt; values <br>
+&nbsp;&nbsp;&nbsp;    from above or optionally include one of the predefined designs from below.<br>
+&nbsp;&nbsp;&nbsp;&ndash;&ndash;&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;!&ndash;&ndash; &lt;include url=&quot;skin/vtourskin_design_flat_light.xml&quot;  /&gt; &ndash;&ndash;&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;!&ndash;&ndash; &lt;include url=&quot;skin/vtourskin_design_glass.xml&quot;       /&gt; &ndash;&ndash;&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;!&ndash;&ndash; &lt;include url=&quot;skin/vtourskin_design_ultra_light.xml&quot; /&gt; &ndash;&ndash;&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;!&ndash;&ndash; &lt;include url=&quot;skin/vtourskin_design_117.xml&quot;         /&gt; &ndash;&ndash;&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;!&ndash;&ndash; &lt;include url=&quot;skin/vtourskin_design_117round.xml&quot;    /&gt; &ndash;&ndash;&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;!&ndash;&ndash; &lt;include url=&quot;skin/vtourskin_design_black.xml&quot;       /&gt; &ndash;&ndash;&gt;<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;!&ndash;&ndash; startup action &ndash; load the first scene &ndash;&ndash;&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;action name=&quot;startup&quot; autorun=&quot;onstart&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loadscene(get(startscene), null, MERGE);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(startactions !== null, startactions() );<br>
+&nbsp;&nbsp;&nbsp;&lt;/action&gt;<br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_1&quot; title=&quot;1&quot; onstart=&quot;&quot; thumburl=&quot;panos/1.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;56.888&quot; vlookat=&quot;0.294&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/1.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;84.979&quot; atv=&quot;&ndash;7.570&quot; linkedscene=&quot;scene_2&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_2&quot; title=&quot;2&quot; onstart=&quot;&quot; thumburl=&quot;panos/2.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;&ndash;270.143&quot; vlookat=&quot;2.200&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/2.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;121.270&quot; atv=&quot;&ndash;0.283&quot; linkedscene=&quot;scene_1&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;94.855&quot; atv=&quot;&ndash;2.690&quot; linkedscene=&quot;scene_3&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_3&quot; title=&quot;3&quot; onstart=&quot;&quot; thumburl=&quot;panos/3.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;78.439&quot; vlookat=&quot;5.212&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/3.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;73.323&quot; atv=&quot;14.624&quot; linkedscene=&quot;scene_2&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;90.886&quot; atv=&quot;5.590&quot; linkedscene=&quot;scene_4&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_4&quot; title=&quot;4&quot; onstart=&quot;&quot; thumburl=&quot;panos/4.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;&ndash;173.171&quot; vlookat=&quot;&ndash;0.005&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/4.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/4.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;85.164&quot; atv=&quot;6.895&quot; linkedscene=&quot;scene_3&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;93.126&quot; atv=&quot;2.244&quot; linkedscene=&quot;scene_5&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot3&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;148.976&quot; atv=&quot;&ndash;0.005&quot; linkedscene=&quot;scene_8&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_5&quot; title=&quot;5&quot; onstart=&quot;&quot; thumburl=&quot;panos/5.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;46.441&quot; vlookat=&quot;&ndash;1.725&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/5.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/5.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;87.471&quot; atv=&quot;5.609&quot; linkedscene=&quot;scene_4&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;80.752&quot; atv=&quot;1.872&quot; linkedscene=&quot;scene_6&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot3&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;12.113&quot; atv=&quot;&ndash;29.222&quot; linkedscene=&quot;scene_15&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_6&quot; title=&quot;6&quot; onstart=&quot;&quot; thumburl=&quot;panos/6.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;117.897&quot; vlookat=&quot;0.458&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/6.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/6.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;168.373&quot; atv=&quot;&ndash;1.172&quot; linkedscene=&quot;scene_5&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_7&quot; title=&quot;7&quot; onstart=&quot;&quot; thumburl=&quot;panos/7.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;78.617&quot; vlookat=&quot;3.547&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/7.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/7.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;99.194&quot; atv=&quot;6.271&quot; linkedscene=&quot;scene_8&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_8&quot; title=&quot;8&quot; onstart=&quot;&quot; thumburl=&quot;panos/8.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;89.157&quot; vlookat=&quot;0.596&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/8.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/8.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;25.496&quot; atv=&quot;0.020&quot; linkedscene=&quot;scene_4&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;84.314&quot; atv=&quot;3.852&quot; linkedscene=&quot;scene_7&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_9&quot; title=&quot;9&quot; onstart=&quot;&quot; thumburl=&quot;panos/9.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;83.031&quot; vlookat=&quot;&ndash;18.206&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/9.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/9.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;55.945&quot; atv=&quot;45.800&quot; linkedscene=&quot;scene_14&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;76.840&quot; atv=&quot;&ndash;38.550&quot; linkedscene=&quot;scene_16&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_10&quot; title=&quot;10&quot; onstart=&quot;&quot; thumburl=&quot;panos/10.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;85.820&quot; vlookat=&quot;&ndash;0.444&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/10.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/10.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;152.813&quot; atv=&quot;33.727&quot; linkedscene=&quot;scene_15&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;64.586&quot; atv=&quot;&ndash;4.047&quot; linkedscene=&quot;scene_11&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot3&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;52.839&quot; atv=&quot;&ndash;2.351&quot; linkedscene=&quot;scene_12&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot4&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;84.281&quot; atv=&quot;&ndash;5.614&quot; linkedscene=&quot;scene_13&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_11&quot; title=&quot;11&quot; onstart=&quot;&quot; thumburl=&quot;panos/11.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;108.889&quot; vlookat=&quot;0.063&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/11.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/11.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;119.551&quot; atv=&quot;&ndash;1.493&quot; linkedscene=&quot;scene_10&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;148.629&quot; atv=&quot;&ndash;3.883&quot; linkedscene=&quot;scene_12&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot3&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;133.149&quot; atv=&quot;&ndash;5.126&quot; linkedscene=&quot;scene_13&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_12&quot; title=&quot;12&quot; onstart=&quot;&quot; thumburl=&quot;panos/12.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;58.966&quot; vlookat=&quot;0.152&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/12.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/12.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;4.610&quot; atv=&quot;&ndash;2.333&quot; linkedscene=&quot;scene_11&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;59.634&quot; atv=&quot;&ndash;2.357&quot; linkedscene=&quot;scene_10&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot3&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;145.548&quot; atv=&quot;&ndash;3.044&quot; linkedscene=&quot;scene_13&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_13&quot; title=&quot;13&quot; onstart=&quot;&quot; thumburl=&quot;panos/13.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;90.813&quot; vlookat=&quot;0.915&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/13.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/13.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;66.437&quot; atv=&quot;&ndash;0.232&quot; linkedscene=&quot;scene_12&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;83.133&quot; atv=&quot;&ndash;2.228&quot; linkedscene=&quot;scene_11&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot3&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;98.567&quot; atv=&quot;&ndash;2.601&quot; linkedscene=&quot;scene_10&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot4&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;116.619&quot; atv=&quot;&ndash;2.786&quot; linkedscene=&quot;scene_14&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_14&quot; title=&quot;14&quot; onstart=&quot;&quot; thumburl=&quot;panos/14.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;88.732&quot; vlookat=&quot;&ndash;0.845&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/14.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/14.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;137.065&quot; atv=&quot;&ndash;1.334&quot; linkedscene=&quot;scene_13&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;75.923&quot; atv=&quot;&ndash;2.785&quot; linkedscene=&quot;scene_12&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot3&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;7.363&quot; atv=&quot;&ndash;0.675&quot; linkedscene=&quot;scene_10&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot4&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;4.103&quot; atv=&quot;&ndash;3.094&quot; linkedscene=&quot;scene_11&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot5&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;68.408&quot; atv=&quot;&ndash;38.711&quot; linkedscene=&quot;scene_9&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_15&quot; title=&quot;15&quot; onstart=&quot;&quot; thumburl=&quot;panos/15.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;247.413&quot; vlookat=&quot;1.510&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/15.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/15.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;91.242&quot; atv=&quot;46.196&quot; linkedscene=&quot;scene_5&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;118.041&quot; atv=&quot;&ndash;23.527&quot; linkedscene=&quot;scene_10&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_16&quot; title=&quot;16&quot; onstart=&quot;&quot; thumburl=&quot;panos/16.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;83.018&quot; vlookat=&quot;2.516&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/16.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/16.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;145.957&quot; atv=&quot;33.386&quot; linkedscene=&quot;scene_9&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot2&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;86.034&quot; atv=&quot;0.503&quot; linkedscene=&quot;scene_17&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot3&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;97.402&quot; atv=&quot;1.920&quot; linkedscene=&quot;scene_18&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_17&quot; title=&quot;17&quot; onstart=&quot;&quot; thumburl=&quot;panos/17.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;414.302&quot; vlookat=&quot;1.561&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/17.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/17.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;155.315&quot; atv=&quot;5.108&quot; linkedscene=&quot;scene_16&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;scene name=&quot;scene_18&quot; title=&quot;18&quot; onstart=&quot;&quot; thumburl=&quot;panos/18.tiles/thumb.jpg&quot; lat=&quot;&quot; lng=&quot;&quot; heading=&quot;&quot;&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;view hlookat=&quot;115.243&quot; vlookat=&quot;1.227&quot; fovtype=&quot;MFOV&quot; fov=&quot;120.000&quot; maxpixelzoom=&quot;2.0&quot; fovmin=&quot;70&quot; fovmax=&quot;140&quot; limitview=&quot;auto&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;preview url=&quot;panos/18.tiles/preview.jpg&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;cube url=&quot;panos/18.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg&quot; multires=&quot;512,640,1280,2624&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/image&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hotspot name=&quot;spot1&quot; style=&quot;skin_hotspotstyle&quot; ath=&quot;&ndash;88.452&quot; atv=&quot;&ndash;0.818&quot; linkedscene=&quot;scene_16&quot; /&gt;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&lt;/scene&gt;<br>
+<br>
+<br>
+&lt;/krpano&gt;</body></html>
